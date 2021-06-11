@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "286373430998",
+    "project_id": "ar-app-2c956",
+    "storage_bucket": "ar-app-2c956.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286373430998:android:dfd63884b3d1b3be4aeb77",
+        "android_client_info": {
+          "package_name": "com.hardy.opinionpoll"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286373430998-dku3jnt0u27he3hgap41tc61smaoq1ts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq2QDlrcYDvmS0YjPl34Q5bS4o6zShNNk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "286373430998-dku3jnt0u27he3hgap41tc61smaoq1ts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
