@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.BarChart;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     TextView textView;
     int num;
     Dialog dialog;
-
+    TextView fbtn;
 
 
     @Override
@@ -48,7 +49,16 @@ public class MainActivity extends AppCompatActivity {
       //  textView=findViewById(R.id.textView);
         btnResult=findViewById(R.id.btn_result);
 
+     fbtn=findViewById(R.id.redirected_Page);
+     fbtn.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View view) {
+             Intent intent=new Intent(MainActivity.this,Dynamic_Radio_Button.class);
+             startActivity(intent);
+             finish();
 
+         }
+     });
 
         dialog=new Dialog(MainActivity.this);
         dialog.setContentView(R.layout.custom_dialog);
@@ -164,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
         DatabaseReference DReference;
         DReference=FirebaseDatabase.getInstance().getReference().child("data");
         HashMap hashMap=new HashMap();
-        str=String.valueOf(Integer.parseInt(str)+1);
+      //  str=String.valueOf(Integer.parseInt(str)+1);
    //     Toast.makeText(getApplicationContext(),str,Toast.LENGTH_LONG).show();
         hashMap.put(userdata,num);
         DReference.updateChildren(hashMap).addOnSuccessListener(new OnSuccessListener() {
